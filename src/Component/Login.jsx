@@ -10,7 +10,7 @@ export const Login = () => {
   const [password, setPassword] = useState("");
   const toast = useToast();
   const [loading, setLoading] = useState(false);
-  const { setIsAuth, setUserDetails } = ProjectContextValue();
+  const { setIsAuth, setUserDetails,setToken } = ProjectContextValue();
   const navigate = useNavigate();
   const handleLogin = async (e) => {
     e.preventDefault();
@@ -32,7 +32,7 @@ export const Login = () => {
       setLoading(false);
       if (data.data.message == "login successful") {
         localStorage.setItem("projecttoken", JSON.stringify(data?.data?.token));
-
+        setToken(data?.data?.token)
         toast({
           title: "User Login Success",
           description: data.data.message,

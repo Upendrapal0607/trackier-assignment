@@ -1,6 +1,6 @@
 import axios from "axios";
 const bashUrl = "https://task-managment-backend-rosy.vercel.app/";
-const token = JSON.parse(localStorage.getItem("projecttoken")) || "";
+
 export const ResisterUser = async (payload) => {
   try {
     return await axios.post(`${bashUrl}user/register`, payload);
@@ -25,6 +25,8 @@ export const LoginUser = async (payload) => {
 };
 
 export const GetAllProject = async () => {
+  const token = JSON.parse(localStorage.getItem("projecttoken")) || "";
+  console.log({token});
   try {
     return await axios.get(`${bashUrl}project`, {
       headers: {
@@ -40,6 +42,8 @@ export const GetAllProject = async () => {
 };
 
 export const AddNewProject = async (payload) => {
+  const token = JSON.parse(localStorage.getItem("projecttoken")) || "";
+  console.log({token});
   try {
     const data = await axios.post(`${bashUrl}project/add`, payload, {
       headers: {
@@ -56,6 +60,8 @@ export const AddNewProject = async (payload) => {
 };
 
 export const AddNewTask = async (payload, id) => {
+  const token = JSON.parse(localStorage.getItem("projecttoken")) || "";
+  console.log({token});
   try {
     const response = await axios.patch(
       `${bashUrl}project/update/${id}`,
@@ -73,6 +79,8 @@ export const AddNewTask = async (payload, id) => {
   }
 };
 export const GetAllTask = async () => {
+  const token = JSON.parse(localStorage.getItem("projecttoken")) || "";
+  console.log({token});
   try {
     return await axios.get(`${bashUrl}project/task`, {
       headers: {
@@ -85,6 +93,8 @@ export const GetAllTask = async () => {
 };
 
 export const DeleteProject = async (id) => {
+  const token = JSON.parse(localStorage.getItem("projecttoken")) || "";
+  console.log({token});
   try {
     const response = await axios.delete(`${bashUrl}project/delete/${id}`, {
       headers: {

@@ -1,70 +1,79 @@
-# Getting Started with Create React App
+# Tittle
+## Trackier project manager
+# About
+This is a very simple project management and allow to create task for every project which is provide flexibility to see create project update and add task in project.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+- Backend code base [Back end](https://github.com/Upendrapal0607/trackier-backend).
+- Frontend [Live](https://66a4ceca76df8d08615a2780--cozy-scone-02f0f9.netlify.app/).
+- Go through [Vedio](https://drive.google.com/file/d/1Y_CNmmTa6JTnTVH0oXXR4om_kvD4WN4m/view?usp=sharing).
 
-## Available Scripts
 
-In the project directory, you can run:
+## Installation & Getting Started forntend
+Follow these detailed instructions to install, configure, and run the project on your local system.
 
-### `npm start`
+1. Clone the repository:
+    ```bash
+    git clone https://github.com/Upendrapal0607/trackier-assignment.git
+    ```
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+2. Navigate to the project directory:
+    ```bash
+    cd trackier-assignment
+    ```
+ Install the dependencies:
+    ```bash
+    npm install
+    ```
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+4. Run the development server:
+    ```bash
+    npm run start
+    ```
 
-### `npm test`
+5. Open your browser and go to `http://localhost:3000/` to see the project in action.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Installation & Getting Started backend
+Follow these detailed instructions to install, configure, and run the project on your local system.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. Clone the repository:
+    ```bash
+    git clone https://github.com/Upendrapal0607/trackier-backend.git
+    ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+2. Navigate to the project directory:
+    ```bash
+    cd trackier-backend
+    ```
+ Install the dependencies:
+    ```bash
+    npm install
+    ```
 
-### `npm run eject`
+4. Run the development server:
+    ```bash
+    npm start server 
+    ```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+5. Open your browser and go to `http://localhost:8080/` to see the project in action.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+# Note :
+1. Make sure add all configuration of backend .env file which I can give you. 
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Technology Stack
+- **Node.js**
+- **Express.js**
+- **Tailwind CSS**
+- **Chakra-UI**
+- **React.js**
+- **JavaScript**
+- **MongoDB**
+- **Other Libraries/Modules**
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Thanks,
+**Upendra Pal**
+[upendrapal06072@gmail.com](mailto:upendrapal06072@gmail.com)

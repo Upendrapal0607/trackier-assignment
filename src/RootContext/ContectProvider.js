@@ -6,12 +6,14 @@ export const ContectProvider = ({ children }) => {
   const [userDetaild, setUserDetails] = useState({});
   const [isAuth, setIsAuth] = useState(false);
   const [tasks, setTask] = useState([]);
+  const [token,setToken] = useState("");
 
   const [projects, setProjects] = React.useState([]);
 
   const HandleLogOut = () => {
     setIsAuth(false);
     setUserDetails({});
+    setToken("");
     localStorage.removeItem("projecttoken");
   };
 
@@ -27,6 +29,8 @@ export const ContectProvider = ({ children }) => {
   return (
     <ProjectContext.Provider
       value={{
+        token,
+        setToken,
         isAuth,
         setIsAuth,
         projects,

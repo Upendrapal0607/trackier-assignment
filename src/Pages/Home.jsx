@@ -56,7 +56,9 @@ export function Home() {
                 Create Project
               </Button>
             </Link>
+            <a href="https://drive.google.com/file/d/1Y_CNmmTa6JTnTVH0oXXR4om_kvD4WN4m/view?usp=sharing" target="_blank" rel="noopener noreferrer">
             <Button rounded={"full"}>How It Works</Button>
+            </a>
           </Stack>
         </Stack>
       </Flex>
