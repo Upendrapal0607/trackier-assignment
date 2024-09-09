@@ -108,19 +108,19 @@ export const DeleteProject = async (id) => {
   }
 };
 
-export const updateProject = async (id) => {
-  const token = JSON.parse(localStorage.getItem("projecttoken")) || "";
-  console.log({token});
-  try {
-    const response = await axios.delete(`${bashUrl}project/delete/${id}`, {
-      headers: {
-        Authorization: `Bearer ${token}`,
-      },
-    });
+// export const updateProject = async (id) => {
+//   const token = JSON.parse(localStorage.getItem("projecttoken")) || "";
+//   console.log({token});
+//   try {
+//     const response = await axios.delete(`${bashUrl}project/delete/${id}`, {
+//       headers: {
+//         Authorization: `Bearer ${token}`,
+//       },
+//     });
 
-    return response;
-  } catch (error) {
-    return { error, message: "error delete project" };
-  }
-};
+//     return response;
+//   } catch (error) {
+//     return { error, message: "error delete project" };
+//   }
+// };
 
